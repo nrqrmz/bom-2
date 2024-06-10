@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1><%= @bom["title"] %></h1>
+
+<ul class="list-unstyled">
+  <% @bom['books'].each do |book| %>
+    <li>
+      <%= book['book'] %>
+    </li>
+  <% end %>
+</ul>
