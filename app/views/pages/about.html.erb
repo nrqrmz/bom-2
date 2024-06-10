@@ -1,0 +1,8 @@
+<h1><%= @bom['title'] %></h1>
+<h2><%= @bom['title_page']['subtitle'] %></h2>
+<% @bom['title_page']['text'].each do |paragraph| %>
+  <h4><%= paragraph %></h4>
+  <br>
+<% end %>
+<br>
+<h2><%= @bom['title_page']['translated_by'] %></h2>

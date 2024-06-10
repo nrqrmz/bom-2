@@ -1,0 +1,10 @@
+<h1><%= @bom_data %></h1>
+<h1><%= @bom_data2 %></h1>
+
+<h1><%= @bom['testimonies'].first['title'] %></h1>
+<h2><%= @bom['testimonies'].first['text'] %></h2>
+<ul class="list-unstyled">
+  <% @bom['testimonies'][0]['witnesses'].each do |witness| %>
+    <h3><%= witness %></h3>
+  <% end %>
+</ul>
